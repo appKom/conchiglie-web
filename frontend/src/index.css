@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
 @import "tailwindcss";
+
 
 body {
   background-color: #EEEBE6;
@@ -10,4 +12,5 @@ body {
   --color-dotblue: #1D4E89;
   --color-dotred: #A24936;
   --color-dotyellow: #E69D00;
+  --font-sintony: "Sintony";
 }

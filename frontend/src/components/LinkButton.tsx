@@ -19,7 +19,7 @@ const colorMap = new Map<color, string>([
 export const LinkButton = (props: ButtonProps) => {
   return(
     <a 
-      className={"text-4xl font-medium text-white w-xs p-4 text-center shadow-[-10px_-10px_0px_0px_rgba(80,80,80,1)] " + colorMap.get(props.color)}
+      className={"text-4xl font-medium text-white w-xs p-4 text-center shadow-[-10px_-10px_0px_0px_rgba(80,80,80,1)] relative z-10 " + colorMap.get(props.color)}
       href={props.link}
     >
       <slot>{props.children}</slot>

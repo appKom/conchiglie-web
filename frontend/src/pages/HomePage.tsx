@@ -3,7 +3,7 @@ import wave from "../assets/wave.png"
 
 export const HomePage = () => {
   return(
-    <div className="relative flex flex-col justify-center items-center content-between h-screen gap-12 font-sintony">
+    <div className="relative flex flex-col justify-center items-center content-between h-screen gap-12">
       <img 
         src={wave} 
         alt="wave background" 

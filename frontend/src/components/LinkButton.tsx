@@ -10,7 +10,7 @@ interface ButtonProps{
 }
 
 const colorMap = new Map<color, string>([
-  ["green", "bg-dotgreen"],
+  ["green", "bg-dotpastelgreen"],
   ["blue", "bg-dotblue"],
   ["red", "bg-dotred"],
   ["yellow", "bg-dotyellow"]

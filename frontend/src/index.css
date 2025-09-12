@@ -7,6 +7,7 @@ body {
 }
 
 @theme {
+  --color-dotbackground: #EEEBE6;
   --color-dotgreen: #677B4C;
   --color-dotdarkgreen: #495D2F;
   --color-dotblue: #1D4E89;

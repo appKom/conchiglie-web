@@ -5,8 +5,8 @@ import { LinkButton } from '../components/LinkButton';
 export const HomePage = () => {
   return (
     <>
-      <Header/>
-      
+      <Header />
+
       <section className="mt-20 flex h-[40vh] items-center justify-center border-y border-black">
         <div className="text-5xl font-bold">
           Helt nye karrieredager på NTNU den 3. mars
@@ -55,7 +55,7 @@ export const HomePage = () => {
         </div>
       </section>
       <section>
-        <div className="mt-16 flex flex-col items-center gap-4 flex-wrap">
+        <div className="mt-16 flex flex-col flex-wrap items-center gap-4">
           <h2 className="text-4xl font-medium">OPPDAG MULIGHETENE</h2>
           <p>
             dotDAGENE 2026 bringer sammen studenter og bedrifter gjennom en

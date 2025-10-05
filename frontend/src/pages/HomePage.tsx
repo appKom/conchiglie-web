@@ -1,6 +1,5 @@
-import { Footer } from "../components/Footer";
+import { Footer } from '../components/Footer';
 import { LinkButton } from '../components/LinkButton';
-
 
 export const HomePage = () => {
   return (
@@ -167,7 +166,7 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

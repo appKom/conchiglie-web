@@ -201,9 +201,9 @@
 //   );
 // };
 
-import React, { useState } from "react";
-import { Header } from "../components/Header";
-import { Button } from "../components/Button";
+import React, { useState } from 'react';
+import { Header } from '../components/Header';
+import { Button } from '../components/Button';
 
 export const ContactFormPage = () => {
   return (
@@ -218,11 +218,11 @@ export const ContactFormPage = () => {
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
-    bedriftsnavn: "",
-    navn: "",
-    epost: "",
-    telefonnummer: "",
-    melding: "",
+    bedriftsnavn: '',
+    navn: '',
+    epost: '',
+    telefonnummer: '',
+    melding: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -258,16 +258,16 @@ ${formData.melding}
       window.location.href = mailtoLink;
 
       setFormData({
-        bedriftsnavn: "",
-        navn: "",
-        epost: "",
-        telefonnummer: "",
-        melding: "",
+        bedriftsnavn: '',
+        navn: '',
+        epost: '',
+        telefonnummer: '',
+        melding: '',
       });
-      setSubmitStatus("success");
+      setSubmitStatus('success');
     } catch (error) {
-      console.error("Error opening email client:", error);
-      setSubmitStatus("error");
+      console.error('Error opening email client:', error);
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
@@ -278,19 +278,19 @@ ${formData.melding}
       <Header />
 
       {/* Hero section matching home page typography */}
-      <div className="text-center mb-16 px-5 md:px-0">
-        <h1 className="text-6xl md:text-7xl mb-6">
+      <div className="mb-16 px-5 text-center md:px-0">
+        <h1 className="mb-6 text-6xl md:text-7xl">
           <b>Kontakt oss</b>
         </h1>
-        <p className="text-4xl md:text-5xl italic">
+        <p className="text-4xl italic md:text-5xl">
           Vi vil gjerne høre fra deg!
         </p>
       </div>
 
       {/* Form with updated styling */}
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto max-w-4xl">
         <form onSubmit={handleSubmit} className="space-y-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-3">
               <label
                 htmlFor="bedriftsnavn"
@@ -306,7 +306,7 @@ ${formData.melding}
                 onChange={handleInputChange}
                 required
                 placeholder="Skriv inn bedriftsnavn"
-                className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:ring-4 focus:ring-green-500/20 focus:border-green-500 transition-all duration-200"
+                className="w-full border-2 border-gray-300 px-6 py-4 text-lg transition-all duration-200 focus:border-green-500 focus:ring-4 focus:ring-green-500/20"
               />
             </div>
 
@@ -322,12 +322,12 @@ ${formData.melding}
                 onChange={handleInputChange}
                 required
                 placeholder="Skriv inn ditt navn"
-                className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:ring-4 focus:ring-green-500/20 focus:border-green-500 transition-all duration-200"
+                className="w-full border-2 border-gray-300 px-6 py-4 text-lg transition-all duration-200 focus:border-green-500 focus:ring-4 focus:ring-green-500/20"
               />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-3">
               <label
                 htmlFor="epost"
@@ -343,7 +343,7 @@ ${formData.melding}
                 onChange={handleInputChange}
                 required
                 placeholder="din.epost@eksempel.no"
-                className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:ring-4 focus:ring-green-500/20 focus:border-green-500 transition-all duration-200"
+                className="w-full border-2 border-gray-300 px-6 py-4 text-lg transition-all duration-200 focus:border-green-500 focus:ring-4 focus:ring-green-500/20"
               />
             </div>
 
@@ -362,7 +362,7 @@ ${formData.melding}
                 onChange={handleInputChange}
                 required
                 placeholder="+47 123 45 678"
-                className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:ring-4 focus:ring-green-500/20 focus:border-green-500 transition-all duration-200"
+                className="w-full border-2 border-gray-300 px-6 py-4 text-lg transition-all duration-200 focus:border-green-500 focus:ring-4 focus:ring-green-500/20"
               />
             </div>
           </div>
@@ -382,18 +382,18 @@ ${formData.melding}
               required
               rows={6}
               placeholder="Skriv en melding om hva du lurer på..."
-              className="w-full px-6 py-4 text-lg border-2 border-gray-300 focus:ring-4 focus:ring-green-500/20 focus:border-green-500 transition-all duration-200 resize-vertical"
+              className="resize-vertical w-full border-2 border-gray-300 px-6 py-4 text-lg transition-all duration-200 focus:border-green-500 focus:ring-4 focus:ring-green-500/20"
             />
           </div>
 
           <div className="flex justify-center">
             <Button color="green" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sender..." : "Send melding"}
+              {isSubmitting ? 'Sender...' : 'Send melding'}
             </Button>
           </div>
 
-          {submitStatus === "success" && (
-            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 text-green-800">
+          {submitStatus === 'success' && (
+            <div className="rounded-xl border-2 border-green-200 bg-green-50 p-6 text-green-800">
               <p className="text-center text-lg font-medium">
                 E-postklienten din skal nå åpne seg. Takk for din henvendelse!
               </p>

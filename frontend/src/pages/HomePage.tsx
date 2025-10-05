@@ -1,39 +1,39 @@
-import { LinkButton } from "../components/LinkButton";
-import wave from "../assets/wave.png";
-import { Header } from "../components/Header";
-import { AboutUsPage } from "./AboutUsPage";
+import { LinkButton } from '../components/LinkButton';
+import wave from '../assets/wave.png';
+import { Header } from '../components/Header';
+import { AboutUsPage } from './AboutUsPage';
 
 export const HomePage = () => {
   return (
     <>
-      <nav className="h-16 bg-white border-b border-black"></nav>
+      <nav className="h-16 border-b border-black bg-white"></nav>
 
-      <section className="h-[40vh] flex items-center justify-center border-y border-black mt-16">
-        <div className="font-bold text-5xl">
+      <section className="mt-16 flex h-[40vh] items-center justify-center border-y border-black">
+        <div className="text-5xl font-bold">
           Helt nye karrieredager på NTNU den 3. mars
         </div>
       </section>
 
       {/* 3 boxes with countdown */}
-      <section className="flex flex-col items-center gap-8 mt-16">
-        <div className="flex flex-row justify-center items-center gap-2 ">
-          <div className="flex flex-col items-center border-3 w-54 h-36 justify-center bg-dotgreen text-white border-black">
+      <section className="mt-16 flex flex-col items-center gap-8">
+        <div className="flex flex-row items-center justify-center gap-2">
+          <div className="bg-dotgreen flex h-36 w-54 flex-col items-center justify-center border-3 border-black text-white">
             <p className="text-4xl font-bold">148</p>
             <p>DAGER</p>
           </div>
-          <div className="flex flex-col items-center border-3 w-54 h-36 justify-center bg-dotpurple text-white border-black">
+          <div className="bg-dotpurple flex h-36 w-54 flex-col items-center justify-center border-3 border-black text-white">
             <p className="text-4xl font-bold">11</p>
             <p>TIMER</p>
           </div>
-          <div className="flex flex-col items-center border-3 w-54 h-36 justify-center bg-dotyellow text-white border-black">
+          <div className="bg-dotyellow flex h-36 w-54 flex-col items-center justify-center border-3 border-black text-white">
             <p className="text-4xl font-bold">23</p>
             <p>MINUTTER</p>
           </div>
         </div>
         <p>3. mars 2026 · Realfagsbygget U1, Gløshaugen</p>
       </section>
-      <section className="flex flex-row items-center justify-center h-16"></section>
-      <section className="flex flex-row items-center justify-center h-16 gap-8">
+      <section className="flex h-16 flex-row items-center justify-center"></section>
+      <section className="flex h-16 flex-row items-center justify-center gap-8">
         <LinkButton link="/contact" color="green">
           Kontakt oss
         </LinkButton>
@@ -42,29 +42,29 @@ export const HomePage = () => {
         </LinkButton>
       </section>
       <section>
-        <div className="flex flex-row items-center justify-center gap-2 px-8 mt-16">
-          <div className="w-full p-6 bg-dotpurple border-3 border-black flex flex-col items-center justify-center gap-4 text-white">
-            <div className="w-16 h-16 bg-white"></div>
+        <div className="mt-16 flex flex-row items-center justify-center gap-2 px-8">
+          <div className="bg-dotpurple flex w-full flex-col items-center justify-center gap-4 border-3 border-black p-6 text-white">
+            <div className="h-16 w-16 bg-white"></div>
             <p className="text-2xl">500+ STUDENTER</p>
             <p>Møt kvalifiserte kandidater innen IT og teknologi</p>
           </div>
-          <div className="w-full p-6 bg-dotgreen border-3 border-black flex flex-col items-center justify-center gap-4 text-white">
-            <div className="w-16 h-16 bg-white"></div>
+          <div className="bg-dotgreen flex w-full flex-col items-center justify-center gap-4 border-3 border-black p-6 text-white">
+            <div className="h-16 w-16 bg-white"></div>
             <p className="text-2xl">HELT NYTT</p>
             <p>Første dotDAGENE noensinne - vær med fra starten!</p>
           </div>
         </div>
       </section>
       <section>
-        <div className="flex flex-col items-center mt-16 gap-4">
+        <div className="mt-16 flex flex-col items-center gap-4">
           <h2 className="text-4xl font-medium">OPPDAG MULIGHETENE</h2>
           <p>
             dotDAGENE 2026 bringer sammen studenter og bedrifter gjennom en
             rekke aktiviteter og muligheter
           </p>
-          <div className="flex flex-row w-full items-stretch justify-center gap-2 px-8 mt-16">
-            <div className="w-full p-6 bg-dotgreen border-3 border-black flex flex-col gap-4 text-white">
-              <div className="w-16 h-16 bg-white"></div>
+          <div className="mt-16 flex w-full flex-row items-stretch justify-center gap-2 px-8">
+            <div className="bg-dotgreen flex w-full flex-col gap-4 border-3 border-black p-6 text-white">
+              <div className="h-16 w-16 bg-white"></div>
               <p className="text-2xl">STANDS</p>
               <p>
                 Få egen stand på dotDAGENE og møt direkte med
@@ -75,8 +75,8 @@ export const HomePage = () => {
                 Legg til i kalender
               </LinkButton>
             </div>
-            <div className="w-full p-6 bg-dotyellow border-3 border-black flex flex-col gap-4">
-              <div className="w-16 h-16 bg-black"></div>
+            <div className="bg-dotyellow flex w-full flex-col gap-4 border-3 border-black p-6">
+              <div className="h-16 w-16 bg-black"></div>
               <p className="text-2xl">PITCHEKVELD</p>
               <p>
                 dotDAGENE inviterer til pitchekveld som avslutning på
@@ -93,10 +93,10 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="my-32 mx-16">
-        <div className="bg-white border-3 border-black w-full py-16 p-32 flex flex-col items-center justify-center gap-8">
+      <section className="mx-16 my-32">
+        <div className="flex w-full flex-col items-center justify-center gap-8 border-3 border-black bg-white p-32 py-16">
           <h2 className="text-6xl font-medium">HVEM ER VI?</h2>
-          <p className="text-center w-full px-48">
+          <p className="w-full px-48 text-center">
             NTNUs nyeste karrieredag innen digitalisering og teknologi.
             Arrangert av informatikkstudenter for å koble sammen fremtidens
             IT-talenter med bransjeledende bedrifter.
@@ -106,52 +106,52 @@ export const HomePage = () => {
 
       <section className="px-8">
         <div className="flex flex-row gap-2">
-          <div className="border-3 bg-dotgreen border-black text-white p-6 w-full flex flex-col gap-4">
+          <div className="bg-dotgreen flex w-full flex-col gap-4 border-3 border-black p-6 text-white">
             <h3 className="text-3xl">KONTAKT DOTDAGENE</h3>
             <p>
               Vi arrangerer NTNUs nyeste karrieredag innen digitalisering og
               teknologi. Kontakt oss for å sikre din bedrift en plass på
               arrangementet.
             </p>
-            <div className="bg-dotpurple border-3 border-black flex flex-row p-6">
+            <div className="bg-dotpurple flex flex-row border-3 border-black p-6">
               <div className="w-16">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="h-8 w-8 bg-white"></div>
               </div>
               <div className="flex flex-col">
                 <p>E-POST</p>
                 <p>kontakt@dotdagene.no</p>
               </div>
             </div>
-            <div className="bg-dotpurple border-3 border-black flex flex-row p-6">
+            <div className="bg-dotpurple flex flex-row border-3 border-black p-6">
               <div className="w-16">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="h-8 w-8 bg-white"></div>
               </div>
               <div className="flex flex-col">
                 <p>TELEFON</p>
                 <p>+47 123 45 678</p>
               </div>
             </div>
-            <div className="bg-dotpurple border-3 border-black flex flex-row p-6">
+            <div className="bg-dotpurple flex flex-row border-3 border-black p-6">
               <div className="w-16">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="h-8 w-8 bg-white"></div>
               </div>
               <div className="flex flex-col">
                 <p>DATO</p>
                 <p>3. mars 2026</p>
               </div>
             </div>
-            <div className="bg-dotpurple border-3 border-black flex flex-row p-6">
+            <div className="bg-dotpurple flex flex-row border-3 border-black p-6">
               <div className="w-16">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="h-8 w-8 bg-white"></div>
               </div>
               <div className="flex flex-col">
                 <p>LOKASJON</p>
                 <p>Realfagsbygget U1 NTNU Gløshaugen, Trondheim</p>
               </div>
             </div>
-            <div className="bg-dotpurple border-3 border-black flex flex-row p-6">
+            <div className="bg-dotpurple flex flex-row border-3 border-black p-6">
               <div className="w-16">
-                <div className="w-8 h-8 bg-white"></div>
+                <div className="h-8 w-8 bg-white"></div>
               </div>
               <div className="flex flex-col">
                 <p>MÅLGRUPPE</p>
@@ -159,7 +159,7 @@ export const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="border-3 bg-dotyellow border-black p-6 w-full flex flex-col gap-4">
+          <div className="bg-dotyellow flex w-full flex-col gap-4 border-3 border-black p-6">
             <h3 className="text-3xl">INTERESSEMELDING</h3>
             <p>
               Fyll ut skjemaet så tar vi kontakt for å diskutere

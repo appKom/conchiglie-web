@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/HomePage";
-import { ContactFormPage } from "./pages/ContactFormPage";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { ContactFormPage } from './pages/ContactFormPage';
 
 export function App() {
   return (

@@ -1,16 +1,14 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { ContactFormPage } from "./pages/ContactFormPage";
 
-import { Header } from './components/Header';
-import './index.css'
-import { AboutUsPage } from './pages/AboutUsPage';
-import { HomePage } from './pages/HomePage';
-
-export const App = () => {
-
+export function App() {
   return (
-    <>
-      <Header/>
-      <HomePage/>
-      <AboutUsPage/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactFormPage />} />
+      </Routes>
+    </Router>
   );
-};
+}

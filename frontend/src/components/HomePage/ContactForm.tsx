@@ -189,7 +189,7 @@ ${formData.melding}
           </div>
 
           {submitStatus === 'success' && (
-            <div className="rounded-xl border-2 border-green-200 bg-green-50 p-6 text-green-800">
+            <div className="bg-dotgreen border-3 border-black p-6 text-white">
               <p className="text-center text-lg font-medium">
                 E-postklienten din skal nå åpne seg. Takk for din henvendelse!
               </p>

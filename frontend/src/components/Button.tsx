@@ -11,23 +11,37 @@ interface ButtonProps {
 }
 
 const colorMap = new Map<color, string>([
-  ['green', 'bg-dotgreen'],
-  ['purple', 'bg-dotpurple'],
-  ['yellow', 'bg-dotyellow'],
+  ['green', ' bg-dotgreen'],
+  ['purple', ' bg-dotpurple'],
+  ['yellow', ' bg-dotyellow'],
 ]);
 
-export const Button = (props: ButtonProps) => {
+export const Button = ({
+  children,
+  onClick,
+  color,
+  type = 'button',
+  disabled,
+}: ButtonProps) => {
   return (
     <button
-      className={
-        'relative z-10 border-3 border-black px-6 py-3 text-center text-2xl font-medium text-white shadow-[-4px_-4px_0px_0px_rgba(80,80,80,1)] ' +
-        colorMap.get(props.color)
-      }
-      onClick={props.onClick}
-      type={props.type || 'button'}
-      disabled={props.disabled}
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className="group relative inline-block cursor-pointer select-none focus:outline-none"
     >
-      {props.children}
+      {/* Bottom "shadow" chip */}
+      <span aria-hidden="true" className="absolute inset-0 bg-black" />
+      {/* Top actual button chip */}
+      <span
+        className={
+          'relative block border-3 border-black px-6 py-3 text-center text-2xl font-medium text-white transition-transform duration-150 ' +
+          'group-hover:translate-x-1 group-hover:translate-y-1' +
+          colorMap.get(color)
+        }
+      >
+        <span className="pointer-events-none">{children}</span>
+      </span>
     </button>
   );
 };

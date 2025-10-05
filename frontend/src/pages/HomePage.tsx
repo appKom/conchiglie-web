@@ -2,6 +2,7 @@ import { LinkButton } from "../components/LinkButton";
 import wave from "../assets/wave.png";
 import { Header } from "../components/Header";
 import { AboutUsPage } from "./AboutUsPage";
+import { Footer } from "../components/Footer";
 
 export const HomePage = () => {
   return (
@@ -28,6 +29,7 @@ export const HomePage = () => {
         </LinkButton>
       </div>
       <AboutUsPage />
+      <Footer />
     </>
   );
 };

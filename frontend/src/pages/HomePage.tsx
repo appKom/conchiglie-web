@@ -1,14 +1,13 @@
 import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
+import { Header } from '../components/Header/Header';
 import { LinkButton } from '../components/LinkButton';
 
 export const HomePage = () => {
   return (
     <>
       <Header/>
-      {/* <nav className="h-16 border-b border-black bg-white"></nav> */}
-
-      <section className="mt-5 flex h-[40vh] items-center justify-center border-y border-black">
+      
+      <section className="mt-20 flex h-[40vh] items-center justify-center border-y border-black">
         <div className="text-5xl font-bold">
           Helt nye karrieredager på NTNU den 3. mars
         </div>

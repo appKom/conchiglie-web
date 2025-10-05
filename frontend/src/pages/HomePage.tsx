@@ -1,7 +1,7 @@
-import { LinkButton } from "../components/LinkButton";
-import wave from "../assets/wave.png";
-import { Header } from "../components/Header";
-import { AboutUsPage } from "./AboutUsPage";
+import { LinkButton } from '../components/LinkButton';
+import wave from '../assets/wave.png';
+import { Header } from '../components/Header';
+import { AboutUsPage } from './AboutUsPage';
 
 export const HomePage = () => {
   return (

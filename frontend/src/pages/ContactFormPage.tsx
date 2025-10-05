@@ -201,9 +201,9 @@
 //   );
 // };
 
-import React, { useState } from "react";
-import { Header } from "../components/Header";
-import { Button } from "../components/Button";
+import React, { useState } from 'react';
+import { Header } from '../components/Header';
+import { Button } from '../components/Button';
 
 export const ContactFormPage = () => {
   return (
@@ -218,11 +218,11 @@ export const ContactFormPage = () => {
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
-    bedriftsnavn: "",
-    navn: "",
-    epost: "",
-    telefonnummer: "",
-    melding: "",
+    bedriftsnavn: '',
+    navn: '',
+    epost: '',
+    telefonnummer: '',
+    melding: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -258,16 +258,16 @@ ${formData.melding}
       window.location.href = mailtoLink;
 
       setFormData({
-        bedriftsnavn: "",
-        navn: "",
-        epost: "",
-        telefonnummer: "",
-        melding: "",
+        bedriftsnavn: '',
+        navn: '',
+        epost: '',
+        telefonnummer: '',
+        melding: '',
       });
-      setSubmitStatus("success");
+      setSubmitStatus('success');
     } catch (error) {
-      console.error("Error opening email client:", error);
-      setSubmitStatus("error");
+      console.error('Error opening email client:', error);
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
@@ -388,11 +388,11 @@ ${formData.melding}
 
           <div className="flex justify-center">
             <Button color="green" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sender..." : "Send melding"}
+              {isSubmitting ? 'Sender...' : 'Send melding'}
             </Button>
           </div>
 
-          {submitStatus === "success" && (
+          {submitStatus === 'success' && (
             <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 text-green-800">
               <p className="text-center text-lg font-medium">
                 E-postklienten din skal nå åpne seg. Takk for din henvendelse!

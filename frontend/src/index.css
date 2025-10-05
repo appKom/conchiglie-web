@@ -1,19 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap");
 @import "tailwindcss";
 
 body {
-  /* background-color: #EEEBE6; */
-  font-family: "Sintony";
+  font-family: "Inter" sans-serif;
   @apply bg-dotbackground;
 }
 
 @theme {
-  --color-dotbackground: #eeebe6;
-  --color-dotgreen: #677b4c;
-  --color-dotdarkgreen: #495d2f;
-  --color-dotblue: #1d4e89;
-  --color-dotred: #a24936;
-  --color-dotyellow: #e69d00;
-  --color-dotpastelgreen: #94d1af;
-  --font-sintony: "Sintony";
+  --color-dotbackground: hsl(207deg 19% 98%);
+  --color-dotgreen: hsl(87deg 23% 44%);
+  --color-dotpurple: hsl(266deg 53% 70%);
+  --color-dotyellow: hsl(45deg 80% 59%);
 }

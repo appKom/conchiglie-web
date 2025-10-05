@@ -7,7 +7,7 @@ const a_className = "text-gray-600 hover:text-black"
 
 export const Footer = () => {
   return(
-    <footer className="flex border-t-3 justify-center">
+    <footer className="flex border-t-3 justify-center mt-20">
       <section className="flex flex-col md:flex-row md:flex-wrap w-full m-8 mt-12 gap-2 md:gap-8 justify-around">
         <section>
           <img src={Logo} alt="Logo" className="w-1/3 md:mb-4" />

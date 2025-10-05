@@ -2,6 +2,7 @@ import { LinkButton } from '../components/LinkButton';
 import wave from '../assets/wave.png';
 import { Header } from '../components/Header';
 import { AboutUsPage } from './AboutUsPage';
+import { ContactForm } from '../components/HomePage/ContactForm';
 
 export const HomePage = () => {
   return (
@@ -159,12 +160,13 @@ export const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="bg-dotyellow flex w-full flex-col gap-4 border-3 border-black p-6">
+          <div className="bg-dotyellow flex w-full flex-col gap-4 border-3 border-black p-8">
             <h3 className="text-3xl">INTERESSEMELDING</h3>
             <p>
               Fyll ut skjemaet så tar vi kontakt for å diskutere
               standmuligheter.
             </p>
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -21,7 +21,7 @@ export const Button = (props: ButtonProps) => {
   return (
     <button
       className={
-        'text-4xl font-medium text-white w-xs p-4 text-center shadow-[-10px_-10px_0px_0px_rgba(80,80,80,1)] relative z-10 ' +
+        'relative z-10 w-xs p-4 text-center text-4xl font-medium text-white shadow-[-10px_-10px_0px_0px_rgba(80,80,80,1)] ' +
         colorMap.get(props.color)
       }
       onClick={props.onClick}

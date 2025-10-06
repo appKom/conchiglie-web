@@ -1,12 +1,13 @@
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header/Header';
 import { LinkButton } from '../components/LinkButton';
 
 export const HomePage = () => {
   return (
     <>
-      <nav className="h-16 border-b border-black bg-white"></nav>
+      <Header />
 
-      <section className="mt-16 flex h-[40vh] items-center justify-center border-y border-black">
+      <section className="mt-20 flex h-[40vh] items-center justify-center border-y border-black">
         <div className="text-5xl font-bold">
           Helt nye karrieredager på NTNU den 3. mars
         </div>
@@ -14,7 +15,7 @@ export const HomePage = () => {
 
       {/* 3 boxes with countdown */}
       <section className="mt-16 flex flex-col items-center gap-8">
-        <div className="flex flex-row items-center justify-center gap-2">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-2">
           <div className="bg-dotgreen flex h-36 w-54 flex-col items-center justify-center border-3 border-black text-white">
             <p className="text-4xl font-bold">148</p>
             <p>DAGER</p>
@@ -54,7 +55,7 @@ export const HomePage = () => {
         </div>
       </section>
       <section>
-        <div className="mt-16 flex flex-col items-center gap-4">
+        <div className="mt-16 flex flex-col flex-wrap items-center gap-4">
           <h2 className="text-4xl font-medium">OPPDAG MULIGHETENE</h2>
           <p>
             dotDAGENE 2026 bringer sammen studenter og bedrifter gjennom en
@@ -103,7 +104,7 @@ export const HomePage = () => {
       </section>
 
       <section className="px-8">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row flex-wrap gap-2">
           <div className="bg-dotgreen flex w-full flex-col gap-4 border-3 border-black p-6 text-white">
             <h3 className="text-3xl">KONTAKT DOTDAGENE</h3>
             <p>

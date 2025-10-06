@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode, MouseEvent } from 'react';
 
 type color = 'purple' | 'green' | 'yellow';
 
@@ -9,21 +9,29 @@ interface ButtonProps {
 }
 
 const colorMap = new Map<color, string>([
-  ['green', 'bg-dotgreen'],
-  ['purple', 'bg-dotpurple'],
-  ['yellow', 'bg-dotyellow'],
+  ['green', ' bg-dotgreen'],
+  ['purple', ' bg-dotpurple'],
+  ['yellow', ' bg-dotyellow'],
 ]);
 
-export const LinkButton = (props: ButtonProps) => {
+export const LinkButton = ({ children, link, color }: ButtonProps) => {
   return (
     <a
-      className={
-        'relative z-10 border-3 border-black px-6 py-3 text-center text-xl font-medium text-white shadow-[-4px_-4px_0px_0px_rgba(80,80,80,1)] ' +
-        colorMap.get(props.color)
-      }
-      href={props.link}
+      href={link}
+      className="group relative inline-block cursor-pointer select-none focus:outline-none"
     >
-      <slot>{props.children}</slot>
+      {/* Bottom "shadow" chip */}
+      <span aria-hidden="true" className="absolute inset-0 bg-black" />
+      {/* Top actual button chip */}
+      <span
+        className={
+          'relative block border-3 border-black px-6 py-3 text-center text-2xl font-medium text-white transition-transform duration-150 ' +
+          'group-hover:translate-x-1 group-hover:translate-y-1' +
+          colorMap.get(color)
+        }
+      >
+        <span className="pointer-events-none">{children}</span>
+      </span>
     </a>
   );
 };

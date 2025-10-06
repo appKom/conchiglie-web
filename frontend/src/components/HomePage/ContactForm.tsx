@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Header } from '../Header';
+import { useState } from 'react';
 import { Button } from '../Button';
 
 export const ContactForm = () => {
@@ -81,7 +80,7 @@ ${formData.melding}
               value={formData.bedriftsnavn}
               onChange={handleInputChange}
               required
-              placeholder="Skriv inn bedriftsnavn"
+              placeholder="Navn på bedriften"
               className="w-full border-3 border-black bg-white px-3 py-3 text-lg"
             />
           </div>
@@ -102,7 +101,7 @@ ${formData.melding}
                 value={formData.kontaktperson}
                 onChange={handleInputChange}
                 required
-                placeholder="Navn på kontaktperson"
+                placeholder="Ditt navn"
                 className="w-full border-3 border-black bg-white px-3 py-3 text-lg"
               />
             </div>
@@ -120,7 +119,7 @@ ${formData.melding}
                 value={formData.stilling}
                 onChange={handleInputChange}
                 required
-                placeholder="Stillingstittel"
+                placeholder="Din stilling"
                 className="w-full border-3 border-black bg-white px-3 py-3 text-lg"
               />
             </div>
@@ -138,7 +137,7 @@ ${formData.melding}
               value={formData.epost}
               onChange={handleInputChange}
               required
-              placeholder="din.epost@eksempel.no"
+              placeholder="din@bedrift.no"
               className="w-full border-3 border-black bg-white px-3 py-3 text-lg"
             />
           </div>
@@ -177,14 +176,14 @@ ${formData.melding}
               value={formData.melding}
               onChange={handleInputChange}
               rows={4}
-              placeholder="Skriv en melding..."
+              placeholder="Fortell oss om deres interesse for dotDAGENE, hvilke studenter dere ønsker å møte, eller andre spørsmål..."
               className="resize-vertical w-full border-3 border-black bg-white px-3 py-3 text-lg"
             />
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex flex-col items-stretch justify-center">
             <Button color="green" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? 'Sender...' : 'Send melding'}
+              Send Melding
             </Button>
           </div>
 
